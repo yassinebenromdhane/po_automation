@@ -1,0 +1,688 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="824,1767.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=mscorlib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence sap:VirtualizedContainerService.HintSize="625.6,1702.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="poListFile" />
+      <Variable x:TypeArguments="x:String" Default="poList.txt" Name="fileName" />
+      <Variable x:TypeArguments="x:String" Name="bodyContent" />
+      <Variable x:TypeArguments="x:String" Default="poList.txt" Name="filePath" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Learn RPA on Youtube!" sap:VirtualizedContainerService.HintSize="584,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="7c9d53b1-3ab9-4af6-9498-7c67bea5142c" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="475.2,395.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="433.6,300.8" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="388.8,174.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="347.2,81.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" WorkbookPath="C:\\wamp64\\www\\rpa_po\\Purchase Orders.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="492,1856.8" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="450.4,1762.4" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_4" SaveAfterEachRow="False">
+                              <ueab:ExcelForEachRowX.Body>
+                                <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                  <ActivityAction.Argument1>
+                                    <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                  </ActivityAction.Argument1>
+                                  <ActivityAction.Argument2>
+                                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                  </ActivityAction.Argument2>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="416.8,1577.6" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="375.2,1285.6" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'PO Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="7c9d53b1-3ab9-4af6-9498-7c67bea5142c" Version="V1">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable BrowserURL="http://localhost/rpa_po/" DesignTimeRectangle="305, 664, 1272, 38" ElementType="InputBox" FriendlyName="'INPUT name'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='PO Name' /&gt;" Guid="e585da48-9e53-486d-99e8-30f0e4dcdb65" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABPwAAAAqCAYAAAAnFUXXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAH2SURBVHhe7dtBasJQAEXR7n9zdVAnLQgOHIngRHESfnnFhAhdgHmcA2+Q5K/g8vMxAAAAAIAagh8AAAAAFHkJfrf7YxyOp7Hb/4zPr28zMzMzMzMzMzN706XhpeWl6a0twS8fcuh8uY5pmp5vAQAAAIB3lIaXlpemt45+S/BLDcwBAAAAAGA70vTS9mZL8EsJdLMPAAAAALYlTS9tb7YEv/z3CwAAAABsz7rtCX4AAAAAsHGCHwAAAAAUEfwAAAAAoIjgBwAAAABFBD8AAAAAKCL4AQAAAEARwQ8AAAAAigh+AAAAAFBE8AMAAACAIoIfAAAAABQR/AAAAACgiOAHAAAAAEUEPwAAAAAoIvgBAAAAQBHBDwAAAACKCH4AAAAAUETwAwAAAIAigh8AAAAAFBH8AAAAAKCI4AcAAAAARQQ/AAAAACgi+AEAAABAEcEPAAAAAIoIfgAAAABQRPADAAAAgCKCHwAAAAAUEfwAAAAAoIjgBwAAAABFBD8AAAAAKPJv8Nvtf8Y0Tc8nAAAAAGAL0vTS9mZL8DscT+N8uT6fAAAAAIAtSNNL25stwe92f/yVwBxw0w8AAAAA3lsaXlpeml7a3mwJfpEPqYE5lP9+zczMzMzMzMzM7D2XhpeWt4598RL8AAAAAIBtE/wAAAAAoMYYv6YxMegffXZPAAAAAElFTkSuQmCC" InformativeScreenshot="365dd3efd7c2ca59b068374e2c104107.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Learn RPA on Youtube!' /&gt;" SearchSteps="FuzzySelector, Image">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="305, 632, 68, 24" ElementType="Text" FriendlyName="'PO Name'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' aaname='PO Name' check:text='PO Name' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAcCAYAAADC8vmmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHGSURBVGhD7ZXdicMwDIBvlkIfbq32oZsU0k0CGaWkYxTSIXy2/CfJipXQwlHQB6ZXR1atz3LuxxldTJCCCVIwQQomSMEEKZggBROkYIIUkKCHux5/3YGN6z09JrzceOaxNzenpz2W6QLxp+mVZjAxr/zsf2gEESH3GxQjzfEicuGy0EqOOxwvbnymycK3CfLMgy9meKRvMWa1AJDX7yQQdJ7cGPL6zyXNR75QUC4oFIL/ltELrDkk2dL6GBe7Lgx6APkA4TPFxPUxF52j4DVyR+/sINpNMloMkQwdhzfWClqmG9k45EeHlIss+06vgHaOCmj2KcQEuoKgGLQoJJVOAgNrtgry0II3XDF2jZtCc+cIcyXvc3Kn5lUg/3YjqLZcGHI799BiuKD8u3Fj8ibjQcn7WhNEc7A51GV8qIL4FcO0xXHkAjFijtLefH06NBy/sYNUQd06KrsEqTFs8xJrkqFQPx/+u5FCeL5PCIIr1r5vJHYK8sAG+QbqNdDWr3dh6hacuykkx7wpKH3n+5iH9nD3CwJqMWVsbNnuNRXkZ/Fx+AI+0UFAklRy8+cRJMiQMEEKJkjBBCmYIAUTpGCCFExQF+f+AGbanRbHFbeNAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                        <uix:NTypeInto.Text>
+                                          <InArgument x:TypeArguments="x:String">
+                                            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">CurrentRow.ByField["Name"]</mca:CSharpValue>
+                                          </InArgument>
+                                        </uix:NTypeInto.Text>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'PO Creator'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="7c9d53b1-3ab9-4af6-9498-7c67bea5142c" Version="V1">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable BrowserURL="http://localhost/rpa_po/" DesignTimeRectangle="305, 750, 1272, 38" ElementType="InputBox" FriendlyName="'INPUT creator'" FullSelectorArgument="&lt;webctrl id='creator' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='creator' tag='INPUT' type='text' aaname='PO Creator' /&gt;" Guid="ae82047d-8c89-4dd2-b4ae-1c7f0da2e6d1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABPwAAAAqCAYAAAAnFUXXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAH2SURBVHhe7dtBasJQAEXR7n9zdVAnLQgOHIngRHESfnnFhAhdgHmcA2+Q5K/g8vMxAAAAAIAagh8AAAAAFHkJfrf7YxyOp7Hb/4zPr28zMzMzMzMzMzN706XhpeWl6a0twS8fcuh8uY5pmp5vAQAAAIB3lIaXlpemt45+S/BLDcwBAAAAAGA70vTS9mZL8EsJdLMPAAAAALYlTS9tb7YEv/z3CwAAAABsz7rtCX4AAAAAsHGCHwAAAAAUEfwAAAAAoIjgBwAAAABFBD8AAAAAKCL4AQAAAEARwQ8AAAAAigh+AAAAAFBE8AMAAACAIoIfAAAAABQR/AAAAACgiOAHAAAAAEUEPwAAAAAoIvgBAAAAQBHBDwAAAACKCH4AAAAAUETwAwAAAIAigh8AAAAAFBH8AAAAAKCI4AcAAAAARQQ/AAAAACgi+AEAAABAEcEPAAAAAIoIfgAAAABQRPADAAAAgCKCHwAAAAAUEfwAAAAAoIjgBwAAAABFBD8AAAAAKPJv8Nvtf8Y0Tc8nAAAAAGAL0vTS9mZL8DscT+N8uT6fAAAAAIAtSNNL25stwe92f/yVwBxw0w8AAAAA3lsaXlpeml7a3mwJfpEPqYE5lP9+zczMzMzMzMzM7D2XhpeWt4598RL8AAAAAIBtE/wAAAAAoMYYv6YxMegffXZPAAAAAElFTkSuQmCC" InformativeScreenshot="d7e681a717ae6d8bd3191deff1ceae8d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Learn RPA on Youtube!' /&gt;" SearchSteps="FuzzySelector, Image">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="305, 718, 78, 24" ElementType="Text" FriendlyName="'PO Creator'" FullSelectorArgument="&lt;webctrl aaname='PO Creator' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='PO Creator' tag='LABEL' type='' check:text='PO Creator' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAcCAYAAADyfuiHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHOSURBVGhD7ZZfbsMgDId3lkl76LXah96kUnqTSjlKlRyjUnsIFgwkYMyfqL+pe/AnIW3BAefDZvsyCgQVCUJFglCRIFQkCBUJQkWCUJEgVCSISORsLj8H883G5e6nE17mduKxVzP52T6k/fau8X/IRCbi7lf6QOnZcXz5B47neM5jC7jYs7k9/APPNOTP4FD++AOri1yYhqVShtn/5mK4xJWeJP/oQ7r5lEiqntNonuxnGdfyRdHN+UCIm9crZMuLXQk8n8dojoV5Kop4LhHK1s06ppbTzopMq1OmGkMf2dO+4Q7msXmOtF8iK5bj14nzkSrSy08OmOLivUo5Oaoi+V1mk25VE71TFdnTVoKABXHtxuFkXSSILB1++lzOKZCJ3Erbjr4NY6oxOyuSHxqtneVoR7pmFlcV6fbinUjY2PVdOadAs7Vj3r8j23s4yiKrHeFbND7IdkV+QGQzRmgbDlVL9TAsctKtg5Tm0a0NErlAiRQ+sud9n5AkfPs/spC09EfB5h0+lksKFRqLlK4XaV1aK45DiyRcbPEe6iCIT0bP6Qc566jcj0tOk1ClW4wgfR38oLtFKu+gIkGoSBAqEoSKBKEiQahIECoSgjG/aUHXHRsH6hwAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                        <uix:NTypeInto.Text>
+                                          <InArgument x:TypeArguments="x:String">
+                                            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">CurrentRow.ByField["Creator"]</mca:CSharpValue>
+                                          </InArgument>
+                                        </uix:NTypeInto.Text>
+                                      </uix:NTypeInto>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Amount'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="7c9d53b1-3ab9-4af6-9498-7c67bea5142c" Version="V1">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable BrowserURL="http://localhost/rpa_po/" DesignTimeRectangle="305, 836, 1272, 38" ElementType="InputBox" FriendlyName="'INPUT amount'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='number' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='number' aaname='Amount' /&gt;" Guid="b100c2b0-cde7-4c18-a0ad-f3cb77c2b345" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABPwAAAAqCAYAAAAnFUXXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALjSURBVHhe7dvBSutAAIXh+/5d9WW66jtcF7qJILhwJYJQFBctuZxiQhtHyFwYaML3waEknSf4mfzpAQAAAIDVEPwAAAAAYEWugt/H51f/9PzS3z089n/vOzMzMzMzMzMzM7vRpeGl5aXpXRqDX/7Iode39/50On2/BQAAAABuURpeWl6a3mX0G4NfamAOAAAAAADLkaaXtjcYg19KoJt9AAAAALAsaXppe4Mx+OW7XwAAAABgeS7bnuAHAAAAAAsn+AEAAADAigh+AAAAANDY8Xj879US/AAAAACgsVLIm7tagh8AAAAANFYKeXNXS/ADAAAAgMZKIW9Y13XF98NqCX4AAAAA0Fgp5GW73a7fbDbn39L/WS3BDwAAAAAaK4W83OxL7Bv2202/WoIfAAAAADQ2jXiHw6HfbrdXwS/PeT89W0vwAwAAAIDGphFvv99fxb5heT89W0vwAwAAAIDGphEvN/nyCe90bvgBAAAAwAJMI17Nagl+AAAAANBYKeTNXS3BDwAAAAAaK4W8uasl+AEAAABAY6WQN3e1BD8AAAAAaKwU8uauluAHAAAAAI2VQt7c1RL8AAAAAKCxacQ7HA5913U/lvfTs7UEPwAAAABobBrx9vt9v9lsfizvp2drCX4AAAAA0Ng04uUm33a7vYp9eXbDDwAAAAAWYBrxsnzCexn88lw6V0vwAwAAAIDGSiEv2+1259iX39L/WS3BDwAAAAAaK4W8Yb/d7BtWS/ADAAAAgMZKIW/uagl+AAAAANBYKeTNXS3BDwAAAAAaK4W8uasl+AEAAADAigh+AAAAALAigh8AAAAArEgx+N09PPan0+n7CQAAAABYgjS9tL3BGPyenl/617f37ycAAAAAYAnS9NL2BmPw+/j8OpfAHHDTDwAAAABuWxpeWl6aXtreYAx+kT9SA3Mo3/2amZmZmZmZmZnZbS4NLy3vMvbFVfADAAAAAJZN8AMAAACA1ej7fzX+8uVW3hlsAAAAAElFTkSuQmCC" InformativeScreenshot="3f5c9be253dffe2a530f5950373c1475.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Learn RPA on Youtube!' /&gt;" SearchSteps="FuzzySelector, Image">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="305, 804, 57, 24" ElementType="Text" FriendlyName="'Amount'" FullSelectorArgument="&lt;webctrl aaname='Amount' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Amount' tag='LABEL' type='' check:text='Amount' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD0AAAAcCAYAAADSkrd6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFmSURBVFhH7ZRRCsIwDIY9y2APXss9eBNBbyLsKOKOIegh4pqka5Nm4Iovmv4wxv61ab407Q4cqkF7UYP2ogbtRQ3ai2zoxwiHfg+H8cXGf8mEvp9n4OEI3TDCk72f0+0CXX+BO3/mMqAnOPVHuD7Cew+nG9u/pk3QYTDv8HOcd/s8kb/oBdchtP6E724uTHioOFQo6eWiufF/OYb+63mYR9Z1oRNDXugvsRIg/s/W0PAKOgLxWcazHXadPkkx8eSnxbWXL8YFyYtY3B0boI15IvbHO11AqiKgLI+ALC8C6MSjpL8BWsfSkJ9CY3DVzmWy69AyWenh5SjmsLDQMbkN0PrY1UFz+608KZF/gl4dRImkReqgy44hSd+KXbbz16DNQFEiQB10/BZr8EWWz8MiFMlXQBf3UxJBG4tLUcIEWgsdxODLYyXFnRXHzHBV7T0Lx2Ec6YuLzIsatBc1aC9q0F7kEBrgDfDIJd0S+RkIAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                        <uix:NTypeInto.Text>
+                                          <InArgument x:TypeArguments="x:String">
+                                            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">CurrentRow.ByField["Amount"]</mca:CSharpValue>
+                                          </InArgument>
+                                        </uix:NTypeInto.Text>
+                                      </uix:NTypeInto>
+                                      <uix:NSelectItem DisplayName="Select Item 'Vendor'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_2" ScopeIdentifier="7c9d53b1-3ab9-4af6-9498-7c67bea5142c" Version="V1">
+                                        <uix:NSelectItem.Item>
+                                          <InArgument x:TypeArguments="x:String">
+                                            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">CurrentRow.ByField["Vendor"]</mca:CSharpValue>
+                                          </InArgument>
+                                        </uix:NSelectItem.Item>
+                                        <uix:NSelectItem.Items>
+                                          <scg:List x:TypeArguments="x:String" Capacity="6">
+                                            <x:String>-</x:String>
+                                            <x:String>IT Unlimited</x:String>
+                                            <x:String>The Office Club</x:String>
+                                            <x:String>CFO Services Unlimited</x:String>
+                                            <x:String>Johnson Consulting BV</x:String>
+                                            <x:String>Event Management Group Ltd</x:String>
+                                          </scg:List>
+                                        </uix:NSelectItem.Items>
+                                        <uix:NSelectItem.Target>
+                                          <uix:TargetAnchorable BrowserURL="http://localhost/rpa_po/" DesignTimeRectangle="305, 757, 1272, 38" ElementType="DropDown" FriendlyName="'-'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' aaname='' /&gt;" Guid="cddeb7b3-6182-4068-9aef-2b27bbedd52f" InformativeScreenshot="8e310c612c65a3f7badf04b8712b5f58.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Learn RPA on Youtube!' /&gt;" SearchSteps="FuzzySelector">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="305, 725, 51, 24" ElementType="Text" FriendlyName="'Vendor'" FullSelectorArgument="&lt;webctrl aaname='Vendor' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Vendor' tag='LABEL' type='' check:text='Vendor' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADcAAAAcCAYAAADFsCezAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAF2SURBVFhH7ZThjcIwDIWZpRI/WAt+sAlS2QSpoyA6RiUYwtfEcclzHOBQe7pUeVKlpnH88jlON7RiVbhSVeFKVYUrVRXuT3Q9U7M90y0M5xDDDR3ttzs6Xf0olTc+0mUI4yW0GBw96HLYUdP2PFS6tfm52bQcHNG9O2aS93R6dapzaUm4LERiynGNPIeO7mFGOmDfPfi0zRgWzLv8JpzySq6G+PXceWNMvH/4oVjth9/SAvj5afOhvSGG1zhgEa4ZFe48wIVv8ToudJxb/Oz/AcDZp/Rc6FtX3z2/CYmx765fJzAQH0l5W4V2wu+2nwjh9Mk4w6jCPrGvsH4QDqo9CuBUzkkAx3niDpkE620/kYLDyrh33U65RKx/Dsdt40ywJZ1gk6Y+hDPa0sd82Zafw0nV2nETOrl1yV0R3phhUTgGihTywn23vJLC/BpOqphpi2kj8rw3S088AEoONwdtGZR4qflv4NaiCleqKlypqnClasVwRD/cdqSIZ5U4ygAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NSelectItem.Target>
+                                      </uix:NSelectItem>
+                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Date Requested'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="7c9d53b1-3ab9-4af6-9498-7c67bea5142c" Version="V1">
+                                        <uix:NTypeInto.Target>
+                                          <uix:TargetAnchorable BrowserURL="http://localhost/rpa_po/index.php?mess=success" DesignTimeRectangle="305, 738, 1272, 38" ElementType="InputBox" FriendlyName="'INPUT date_requested'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='date' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='date' aaname='Date Requested' /&gt;" Guid="2d094dbe-b809-4209-994b-36c297fcc26a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABPwAAAAqCAYAAAAnFUXXAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATXSURBVHhe7d1NahRbGIDhQH4WIjhw6kAcSDQkK4kD9xEhoktwB0J2kC2ExMEVwxUEByIYBCe2Ggjn1lddVZ6urk7nJp2ku3we+CCnfror05c6yVICAAAAAHpD8AMAAACAHhkJfj8Gv9LHT5/T23cf0tE//xpjjDHGGGOMMcYYY+Z0ouFFy4uml2uCX5yIi06+fU9nZ2fVUQAAAABgHkXDi5YXTS+Pfk3wixoYFwAAAAAAiyOaXrS9WhP8ogR6sw8AAAAAFks0vWh7tSb4xb5fAAAAAGDx5G1P8AMAAACABSf4AQAAAECPCH4AAAAA0COCHwAAAAD0iOAHAAAAAD0i+AEAAABAjwh+AAAAANAjgh8AAAAAXJP379+njY2NtLq6mpaWls6dtbW1tLm5mY6Pj6u7L2d2we/LXtq+ey/tHkxYAwAAAMBf5sGDB+nFixfVarrnz5+nhw8fVqvLubXgd/jyXtreO6lWt+Uo7d59lt58qZYAAAAAMEPLy8vp9PS0Wk03GAzKtwGvYnbB7/8oY+CrdFgtb8vXvWfpzsujagUAAAAAs9W1dfcicxW3EvzmI7SdpDdPbTkGAAAA4PpcJt7NT/Ar39rLtse2143WNtr6uoPhFuA75VRv/x28qtbZsVp5rjiWX/N0L30tTpVBsXVsTNzXOhfbjJv7imnHwJHPLaa9JXna+Xqbc3PNpGcDAAAAoBf+juDXDm11BGuODd+8Gw1i1bH8rcA69DXHIiRW97WOdf2twLG/IVg8x26+Lj8/f/7is/Lvr577TxScdj6+M4+WHb8TAAAAAL2Sx7snT56UE9bX1zt/DgsW/Dq20XZdNxbbCuWxLJi114XhG3Ydx9pv0pXfOXrduGEsnLzld/i7TP7HI9POT3g2AAAAAHojj3ePHz9OW1tb5/4cFiv4dYW2icGvdd1Fg18roE081vVmXfks1VuC1YwGv+wtwmpGg9608+PbhgU/AAAAgP66TLxbqOA3to023HjwiyjX+r7CMMTlx0ff8Cs/J1u33+Cbdr6JiVlo7HpeAAAAAPojj3eTtvS2LVDw6w5tNx784r6xyDYa94byY13bc/Nj085f8NkAAAAA6JU83p23jTe3MMGvjFsTt9HeVPAbRrjRsBfGg1299ba+tly3384rztf3TDs/9rzl713cI/gBAAAA9NbKykoaDAbVarqfP3+W91zFDQW/SaGtcJPBr/yu1ufW6gBXze5B+62/4bo+v7131IqE087/iYjlFM902PG8AAAAAPTH/fv30+vXr9Pv37+rI+fb2dkp77mKGQe/9hts1Tri3ByErQhueYADAAAAgOu0v7+fHj16lNbW1sqtuudNXBPXxj1XMbvgN/ENvK6/b3cLut4kBAAAAICemVnwG416cxL5AAAAAOAvM7PgN/yHFdnfsev6Bx0AAAAAwLWaWfADAAAAAG6f4AcAAAAAPSL4AQAAAECPCH4AAAAA0COCHwAAAAD0SGfwe/vuQzo7O6tWAAAAAMAiiKYXba/WBL+Pnz6nk2/fqxUAAAAAsAii6UXbqzXB78fgV1kC4wJv+gEAAADAfIuGFy0vml60vVoT/EKciBoYF8W+X2OMMcYYY4wxxhhjzHxONLxoeXnsCyPBDwAAAABYbIIfAAAAAPRGSv8BU48Zo9ZYBGsAAAAASUVORK5CYII=" InformativeScreenshot="917cebe82ce6aa4493800e3b0789a30b.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Learn RPA on Youtube!' /&gt;" SearchSteps="FuzzySelector, Image">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target DesignTimeRectangle="305, 706, 112, 24" ElementType="Text" FriendlyName="'Date Requested'" FullSelectorArgument="&lt;webctrl aaname='Date Requested' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Date Requested' tag='LABEL' type='' check:text='Date Requested' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHQAAAAcCAYAAACwPZsQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKMSURBVGhD7ZbdbQIxDMc7S6U+dC14YBMk2ATpRkEwBhIMkSaOExzbIXdHaSH4L+XhLufPnxP4cKauZEA7kwHtTAa0MxnQzmRAO5MB7UwGtDMZ0FfVaXCLr5XbnfAZRYAe3frr232KJY3+UudhpeS0dQfcf1uNBbre42PSfhubuDnii3ECEMvBnfF5rjQ/h82rQq30eI5mAw0C42mJPBJozPV/b455ehagXnAq6ClFyPkazE2/uN2SvC/2vLhd4+SrQLVimn5jfXS/rCnmzevX4sM74qu04fVjnummI+tqx3ITA8xjep/7O4Hywg4beuVhEaSJ40BIOy7pR7Fp+o21LYYLPpMGTQQq8sFBSnZ88M/DluSl9Vi+Ax88ZvETkwbgDqAwYRwQUbNwr5AobSoIJrf+exiLCcmnJYto+dVyCZp+QkOP9PjRT/QhcsmSPQb/ZABAxYBWuIghjpp9QoOgkNxov24CxVNDv8+rATT7QR8T/arAvSYDxdOoxkp+8tWq1SR7LHqYF8KCmIqve4EWTUmFkcniAGtAa/5rkn54nm2/vwu0PnxUYAdg6Pc60PqJ9noIUHYtyibLd9o3ZQPHqRqL5NPyC/vMRz7ZDChvbml7e+il+PfSXquvEB4eEROYzAAKBXFD/ruXTixNjH8ThNdREcPbrm9MqF4wg9Hyi/lRWHEoKFA5KMkvjR/7UdZ1/ePj89rQXHlPlaFRcgM7kpeMGf2OAhqvCbIqkx+D4PIFH0Tjsem4X4Imthw6U3WCOcSW3zR0uEIDoYaiPpJzWH5Pi1/Ujt9FMXu/+AGheeY9llvtj99139cGNjeBvp8k0NeXATWg/ciAdiYDanp6GdDOZEA7kwHtSs79ANxMcSPd3MtzAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NTypeInto.Target>
+                                        <uix:NTypeInto.Text>
+                                          <InArgument x:TypeArguments="x:String">
+                                            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">CurrentRow.ByField["Date Requested"]</mca:CSharpValue>
+                                          </InArgument>
+                                        </uix:NTypeInto.Text>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </uix:NTypeInto>
+                                    </Sequence>
+                                    <uix:NClick ClickType="Single" DisplayName="Click 'Add Purchase Order'" sap:VirtualizedContainerService.HintSize="375.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7c9d53b1-3ab9-4af6-9498-7c67bea5142c" Version="V1">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="http://localhost/rpa_po/" DesignTimeRectangle="953, 634, 168, 38" ElementType="Button" FriendlyName="'Add Purchase Order'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Add Purchase Order' check:text='Add Purchase Order' /&gt;" Guid="bc560a2b-fc1e-4d99-b2db-75e8bed94cd8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKwAAAAqCAYAAAAu2LAdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQKSURBVHhe7Zw9btwwEIVzoRQ5TIC0OUk6I4VPYaT1DewDuDSMlAa2MJBmq4UBlwqH5NAzw6GkXa0tcfEe8BBH4s/8fOQ6QLBfBgjqSAAW6koK2L//noeff34N337/GL5efYfh1UwMEovEpFQBll4AVHhrJiYltAVYotmbAMNrm9hkFWBxu8JbNbHJKsB6A2F4K2YBWLgLswAs3IVZABbuwiwAC3dhFoCFuzALwMJdmAVg4S7MArBwF2atC+zjS9j5Zbj13hXfDA9vw3DY3Tjv1vftPqSwv3ffXaLXypd1PmDvnoZDWOcosM4E7PXuNeag9PY0XDtjz+0tA+vV5fnRHzvXFwMsJXJ4CwU6BpRzAqv2TXM+A9ptAns/xP/fZPPPl8qSeC8EWCrQ6/Bwlwo1+xR/GLDBsTkUk3j2Ad4isDGm5mE9skfGlwEsgZcLFOFpJBSTLQqgesDyLZB12N2fBqxqTILeNsnO42ZwnHLPOFYq58hz9Ht7CPONV2Tf50+EIn3Q7N6jsM04qDpvvhBSnfX6Jm6ujemv7qvZm3sc/wxqHqRxs84ArLkBGwWLSclgC5iiefmZbIgHj7UFL1rFcQSwQXZcei4hC42UwAa9x5fhE0293r2oethaxL83xle5OTVSnvOppcbwYbE9S7C6h1bEamNPa4u1GFQ55gSzlgNbAWoAdsdkm+JWyUc76xnXwOaboax1BLBqneBW7NnunCloHGD8/CiPem+/Ttm0to3HOuZkgDXr1TVNVnurddgmn5hru35zzVoMbExsKtlWEZ3G1TfHWEOT435Gery/tgusBWECgOYc08g6RvE+jjfPyBGIhuyebGfvyk7dbX0pL6/mKt8Sdy0N7EQ8M8xaCKz5HceoAEJBfzSwI1CtC2yukVyj0cR3qPM79wab8MQnAlnnvRDY0boHN3I91qxlwDaDSUXQJ7EuYmoQzzdziuvfpaznAus1Rc5z4ZsAYBJYr0ajTUz5psMlf55vN6Ziu+a82sixZe0Zh2M81/lmLQJ2tDAq0JyoLED5uBPJxDm6QXGPoGXA2sMRnPeaBJafq6KHpudx7hyZe9XUBIyqzV7GroGq96Zc9D/iauc9bE245ipeH1geK5+nGsr5Tl+Db/e2zjr+U8w6HdicUPv0p6K9J5yTY1GSXjIMUtbzY6OgwnOArfYPRbfzWsCWd0IKqDFgg0ujo8Jz9d7EFWRravduxWhdzXNvw5H6lkslicbU+dbxq7U2AywMf6JZABbuwiwAC3dhFoCFuzALwMJdmAVg4S7MArBwF2YBWLgLswAs3IVZBVh83Sa8Vbtft4kvNIa3avcLjfGV8fAWTUy6XxlPohdEM8CF1zYxSCxKWEkKWAjaugAs1JGG4T9gi3zez9UBOAAAAABJRU5ErkJggg==" InformativeScreenshot="eadcf63d036e86f1aa2864bae4f822f4.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Learn RPA on Youtube!' /&gt;" SearchSteps="FuzzySelector, Image" />
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelForEachRowX.Body>
+                              <ueab:ExcelForEachRowX.Range>
+                                <InArgument x:TypeArguments="ue:IReadRangeRef">
+                                  <mca:CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">Excel.Sheet["Sheet1"]</mca:CSharpValue>
+                                </InArgument>
+                              </ueab:ExcelForEachRowX.Range>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ueab:ExcelForEachRowX>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelProcessScopeX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1912, -138, 1936, 1048" BrowserType="Edge" IconBase64="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" InformativeScreenshot="aadae07356d8ce90cc3fe5e0e08a6c5d.png" Selector="&lt;html app='msedge.exe' url='http://localhost/rpa_po/index.php' /&gt;" Url="http://localhost/rpa_po/index.php" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ui:ReadRange AddHeaders="True" DisplayName="Read Data" sap:VirtualizedContainerService.HintSize="584,52.8" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="A1" SheetName="Sheet1" WorkbookPath="C:\wamp64\www\rpa_po\Purchase Orders.xlsx">
+      <ui:ReadRange.DataTable>
+        <OutArgument x:TypeArguments="sd:DataTable">
+          <mca:CSharpReference x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">poListFile</mca:CSharpReference>
+        </OutArgument>
+      </ui:ReadRange.DataTable>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ReadRange>
+    <ui:CreateFile ContinueOnError="{x:Null}" DisplayName="Create File" sap:VirtualizedContainerService.HintSize="584,52.8" sap2010:WorkflowViewState.IdRef="CreateFile_1" Path="C:\\Users\\mre\\Documents\\UiPath\\Po_saving">
+      <ui:CreateFile.Name>
+        <InArgument x:TypeArguments="x:String">
+          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">fileName</mca:CSharpValue>
+        </InArgument>
+      </ui:CreateFile.Name>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CreateFile>
+    <ui:AppendLine DisplayName="Append Line" sap:VirtualizedContainerService.HintSize="584,52.8" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="&lt;html&gt;&lt;body&gt;&lt;table border = 1&gt;" UseDefaultEncoding="False">
+      <ui:AppendLine.FileName>
+        <InArgument x:TypeArguments="x:String">
+          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">filePath</mca:CSharpValue>
+        </InArgument>
+      </ui:AppendLine.FileName>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:AppendLine>
+    <Sequence DisplayName="Add Header" sap:VirtualizedContainerService.HintSize="584,68.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:AppendLine DisplayName="Append Line" sap:VirtualizedContainerService.HintSize="433.6,134.4" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="&lt;tr&gt;" UseDefaultEncoding="False">
+        <ui:AppendLine.FileName>
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">filePath</mca:CSharpValue>
+          </InArgument>
+        </ui:AppendLine.FileName>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:AppendLine>
+      <ui:ForEach x:TypeArguments="sd:DataColumn" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="433.6,352" sap2010:WorkflowViewState.IdRef="ForEach`1_1">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="sd:DataColumn">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="sd:DataColumn" Name="col" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Corps" sap:VirtualizedContainerService.HintSize="375.2,227.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:AppendLine DisplayName="Append Line" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="AppendLine_3" UseDefaultEncoding="False">
+                <ui:AppendLine.FileName>
+                  <InArgument x:TypeArguments="x:String">
+                    <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">filePath</mca:CSharpValue>
+                  </InArgument>
+                </ui:AppendLine.FileName>
+                <ui:AppendLine.Text>
+                  <InArgument x:TypeArguments="x:String">
+                    <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">string.Format("&lt;th&gt;{0}&lt;/th&gt;" , col.ColumnName)</mca:CSharpValue>
+                  </InArgument>
+                </ui:AppendLine.Text>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AppendLine>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+        <ui:ForEach.Values>
+          <InArgument x:TypeArguments="sc:IEnumerable">
+            <mca:CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">poListFile.Columns</mca:CSharpValue>
+          </InArgument>
+        </ui:ForEach.Values>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ForEach>
+      <ui:AppendLine DisplayName="Append Line" sap:VirtualizedContainerService.HintSize="433.6,134.4" sap2010:WorkflowViewState.IdRef="AppendLine_4" Text="&lt;/tr&gt;" UseDefaultEncoding="False">
+        <ui:AppendLine.FileName>
+          <InArgument x:TypeArguments="x:String">
+            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">filePath</mca:CSharpValue>
+          </InArgument>
+        </ui:AppendLine.FileName>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:AppendLine>
+    </Sequence>
+    <Sequence DisplayName="Add Data" sap:VirtualizedContainerService.HintSize="584,68.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="508.8,832.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+        <ui:ForEachRow.Body>
+          <ActivityAction x:TypeArguments="sd:DataRow">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="475.2,712" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:AppendLine DisplayName="Append Line" sap:VirtualizedContainerService.HintSize="433.6,134.4" sap2010:WorkflowViewState.IdRef="AppendLine_5" Text="&lt;tr&gt;" UseDefaultEncoding="False">
+                <ui:AppendLine.FileName>
+                  <InArgument x:TypeArguments="x:String">
+                    <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">filePath</mca:CSharpValue>
+                  </InArgument>
+                </ui:AppendLine.FileName>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AppendLine>
+              <ui:ForEach x:TypeArguments="sd:DataColumn" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="433.6,352" sap2010:WorkflowViewState.IdRef="ForEach`1_2">
+                <ui:ForEach.Body>
+                  <ActivityAction x:TypeArguments="sd:DataColumn">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataColumn" Name="col" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Corps" sap:VirtualizedContainerService.HintSize="375.2,227.2" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:AppendLine DisplayName="Append Line" sap:VirtualizedContainerService.HintSize="333.6,134.4" sap2010:WorkflowViewState.IdRef="AppendLine_6" UseDefaultEncoding="False">
+                        <ui:AppendLine.FileName>
+                          <InArgument x:TypeArguments="x:String">
+                            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">filePath</mca:CSharpValue>
+                          </InArgument>
+                        </ui:AppendLine.FileName>
+                        <ui:AppendLine.Text>
+                          <InArgument x:TypeArguments="x:String">
+                            <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">string.Format("&lt;td&gt;{0}&lt;/td&gt;",CurrentRow[col.ColumnName])</mca:CSharpValue>
+                          </InArgument>
+                        </ui:AppendLine.Text>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:AppendLine>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEach.Body>
+                <ui:ForEach.Values>
+                  <InArgument x:TypeArguments="sc:IEnumerable">
+                    <mca:CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">poListFile.Columns</mca:CSharpValue>
+                  </InArgument>
+                </ui:ForEach.Values>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEach>
+              <ui:AppendLine DisplayName="Append Line" sap:VirtualizedContainerService.HintSize="433.6,52.8" sap2010:WorkflowViewState.IdRef="AppendLine_7" Text="&lt;/tr&gt;" UseDefaultEncoding="False">
+                <ui:AppendLine.FileName>
+                  <InArgument x:TypeArguments="x:String">
+                    <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">filePath</mca:CSharpValue>
+                  </InArgument>
+                </ui:AppendLine.FileName>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:AppendLine>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEachRow.Body>
+        <ui:ForEachRow.DataTable>
+          <InArgument x:TypeArguments="sd:DataTable">
+            <mca:CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">poListFile</mca:CSharpValue>
+          </InArgument>
+        </ui:ForEachRow.DataTable>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ForEachRow>
+    </Sequence>
+    <ui:AppendLine DisplayName="Append Line" sap:VirtualizedContainerService.HintSize="584,52.8" sap2010:WorkflowViewState.IdRef="AppendLine_8" Text="&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;" UseDefaultEncoding="False">
+      <ui:AppendLine.FileName>
+        <InArgument x:TypeArguments="x:String">
+          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">filePath</mca:CSharpValue>
+        </InArgument>
+      </ui:AppendLine.FileName>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:AppendLine>
+    <ui:ReadTextFile DisplayName="Read Text File" sap:VirtualizedContainerService.HintSize="584,52.8" sap2010:WorkflowViewState.IdRef="ReadTextFile_1">
+      <ui:ReadTextFile.Content>
+        <OutArgument x:TypeArguments="x:String">
+          <mca:CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">bodyContent</mca:CSharpReference>
+        </OutArgument>
+      </ui:ReadTextFile.Content>
+      <ui:ReadTextFile.FileName>
+        <InArgument x:TypeArguments="x:String">
+          <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">filePath</mca:CSharpValue>
+        </InArgument>
+      </ui:ReadTextFile.FileName>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:ReadTextFile>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="584,835.2" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="550.4,708.8" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="508.8,616" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" WorkbookPath="C:\\Users\\mre\\Desktop\\Projet\\semestre 2\\rpa\\rpa_po\\Emails.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="475.2,346.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,253.6" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_3" SaveAfterEachRow="False">
+                      <ueab:ExcelForEachRowX.Body>
+                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument2>
+                          <Sequence DisplayName="Faire" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Send SMTP Mail Message" Email="medyassinebenromdhane00@gmail.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="333.6,146.4" sap2010:WorkflowViewState.IdRef="SendMail_3" IsBodyHtml="True" Password="rmaieegbmfzgwicp" Port="465" SecureConnection="Auto" Server="smtp.gmail.com">
+                              <ui:SendMail.Body>
+                                <InArgument x:TypeArguments="x:String">
+                                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">bodyContent</mca:CSharpValue>
+                                </InArgument>
+                              </ui:SendMail.Body>
+                              <ui:SendMail.Files>
+                                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                              </ui:SendMail.Files>
+                              <ui:SendMail.Subject>
+                                <InArgument x:TypeArguments="x:String">
+                                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">CurrentRow.ByField["Object"]</mca:CSharpValue>
+                                </InArgument>
+                              </ui:SendMail.Subject>
+                              <ui:SendMail.To>
+                                <InArgument x:TypeArguments="x:String">
+                                  <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">CurrentRow.ByField["Recipient"]</mca:CSharpValue>
+                                </InArgument>
+                              </ui:SendMail.To>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:SendMail>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelForEachRowX.Body>
+                      <ueab:ExcelForEachRowX.Range>
+                        <InArgument x:TypeArguments="ue:IReadRangeRef">
+                          <mca:CSharpValue x:TypeArguments="ue:IReadRangeRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">Excel.Sheet["Sheet1"]</mca:CSharpValue>
+                        </InArgument>
+                      </ueab:ExcelForEachRowX.Range>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:ExcelForEachRowX>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelProcessScopeX>
+  </Sequence>
+</Activity>

@@ -1,0 +1,28 @@
+#subfooter {
+  background-color: #233C70;
+  color: #ffffff !important;
+}
+
+#mc_embed_signup {
+  background-color: transparent !important;
+}
+
+#mc-embedded-subscribe {
+  color: #000000 !important;
+}
+
+@media (max-width: 767px) {
+  #thomas-footer {
+    display: none;
+  }
+}
+
+
+dt {
+  padding-top: 10px;
+}
+
+#mc-MMERGE7 {
+  display: none !important;
+
+}

@@ -1,0 +1,44 @@
+﻿<html><body><table border = 1>
+<tr>
+<th>Name</th>
+<th>Creator</th>
+<th>Amount</th>
+<th>Vendor</th>
+<th>Date Requested</th>
+</tr>
+<tr>
+<td>Professional Services March</td>
+<td>Charles Lewis</td>
+<td>20000</td>
+<td>IT Unlimited</td>
+<td>03/19/2023 00:00:00</td>
+</tr>
+<tr>
+<td>Procurement of new markers</td>
+<td>William Smith</td>
+<td>3000</td>
+<td>The Office Club</td>
+<td>03/22/2023 00:00:00</td>
+</tr>
+<tr>
+<td>CFO Advisory Board</td>
+<td>James Clifton</td>
+<td>45000</td>
+<td>CFO Services Unlimited</td>
+<td>03/22/2023 00:00:00</td>
+</tr>
+<tr>
+<td>Professional Services Other Vendor</td>
+<td>Dana Coleman</td>
+<td>75000</td>
+<td>Johnson Consulting BV</td>
+<td>03/11/2023 00:00:00</td>
+</tr>
+<tr>
+<td>Catering Event</td>
+<td>Constance Leger</td>
+<td>80000</td>
+<td>Event Management Group Ltd</td>
+<td>03/03/2023 00:00:00</td>
+</tr>
+</table></body></html>
